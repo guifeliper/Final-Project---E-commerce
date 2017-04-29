@@ -1,0 +1,10 @@
+{
+  "name": "edit-final-project",
+  "version": "1.0.0",
+  "description": "Edit HTML/CSS and responsive development final project",
+  "scripts": {
+    "server": "php -S localhost:3000 -t app",
+    "server-2": "http-server"
+  },
+  "license": "ISC"
+}
