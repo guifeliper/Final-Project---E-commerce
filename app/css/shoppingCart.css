@@ -1,0 +1,108 @@
+.link-decoration{
+    text-decoration: underline;
+    color: #606060;
+    font-style: italic;
+
+}
+
+.wrapper-content{
+    margin-top: 50px;
+    text-align: center;
+    line-height: 40px;
+}
+
+
+.paragraf-pages{
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.title-itens{
+    font-size: 18px;
+    margin-bottom:10px;
+    position: inherit;
+}
+
+
+/* Product content */
+.product-content{
+    border-top: 1px solid #c2c2c2;
+    border-right: 1px solid #c2c2c2;
+    border-left: 1px solid #c2c2c2;
+}
+.margin-bottom{
+    border-bottom: 1px solid #c2c2c2;
+}
+.product-center-padding{
+    padding: 20px 0;
+}
+.product-center-padding::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.product-left-box{
+    float:left;
+}
+
+.product-box-shoppingCart{
+    width: 105px;
+    height: 160px;
+    border:1px solid #c2c2c2;
+    margin-left: 2px;
+}
+
+.product-detail{
+    text-align: left;
+    margin-left: 10px;
+    width:70%;
+    margin: 18px 0 18px 15px;
+}
+.product-detail-item{
+    padding-bottom: 15px;
+}
+
+.product-size{
+    float:left;
+}
+.product-pricing-box{
+    width: 100%;
+}
+.product-pricing{
+    float:right;
+}
+
+/* -- Subtotal -- */
+/* Utilizar BEM ( Block Element Modifier) na próxima página */
+
+.subtotal-box{
+    background-color: #f9f9f9; 
+    margin-top: 20px;
+    text-align: center;
+}
+.subtotal-box-padding{
+    padding: 30px;
+    font-size: 24px;
+}
+.paragraf-bold{
+    font-weight: bold;
+    display: inline-block;
+}
+.paragraf-orange{
+    color:#ef8440;
+    display: inline-block;
+    margin-left: 25px;
+}
+.btn-buy {
+    width: 100%;
+    margin-top: 35px;
+}
+
+.continue-text{
+    font-size: 24px;
+    color: #303030;
+ 
+}
+.continue-box{
+       padding: 60px;
+}

@@ -76,6 +76,7 @@ font-family: "Georgia", "Helvetica Neue", "Source Sans Pro";
     display: inline-block;
     list-style-type: none;
     margin-right: 5px;
+    text-transform: uppercase;
 }
 
 .menu-line .menu-item:not(:last-child)::after {
@@ -171,6 +172,8 @@ main::after {
 /* -- Creating Pseudoelements for create the arrow in SELECT tag -- */
 .dropdown {
     position: relative;
+    -webkit-appearance: none; 
+    appearance: none;
 }
 .dropdown:after {
     clear: both;
@@ -184,4 +187,55 @@ main::after {
     border-right: 10px solid transparent;
     border-top: 10px solid #333;
 
+}
+
+/* For Chrome and Firefox */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+/*for IE10*/
+select::-ms-expand {
+    display: none;
+}
+
+
+
+/* -- Products Content -- */
+.product-content::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.product-item{
+    text-align: center;
+    width:45%;
+    margin-bottom: 25px;
+    float: left;
+}
+
+/*.product-item:nth-of-type(odd){
+    float:left;
+}*/
+
+
+.product-item:nth-of-type(even){
+    /*float:right;*/
+    margin-left: 10%;
+}
+
+.product-box{
+    height: 275px;
+    border:1px solid #c2c2c2;
+    margin-bottom:15px;
+}
+
+.product-title{
+    font-size: 18px;
+    margin-bottom:10px;
+}
+.product-price{
+    font-size:14px;
 }

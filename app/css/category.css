@@ -1,0 +1,23 @@
+/* -- Main -- */
+.link-decoration{
+    text-decoration: underline;
+    color: #606060;
+    font-style: italic;
+    
+}
+.wrapper-content{
+    margin-top: 50px;
+    text-align: center;
+    line-height: 40px;
+}
+
+
+.paragraf-pages{
+    margin-bottom: 25px;
+}
+
+.title-itens{
+    font-size: 18px;
+    margin-bottom:10px;
+    position: inherit;
+}
