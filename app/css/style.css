@@ -44,7 +44,7 @@ font-family: "Georgia", "Helvetica Neue", "Source Sans Pro";
     float:right;
     width:60px;
     height: 60px;
-    padding-right: 30px;
+    margin-right: 30px;
     line-height: 60px;
     text-align: center;
     background: url(../img/basket-black.png) no-repeat center center scroll;
@@ -130,7 +130,7 @@ main::after {
     margin:0 auto;
 }
 .footer-social{
-    float:left;
+    display:inline-block;
     width:32px;
     height: 32px;
     border:2px solid #606060;
@@ -217,7 +217,7 @@ select::-ms-expand {
 }
 
 /*.product-item:nth-of-type(odd){
-    float:left;
+float:left;
 }*/
 
 
@@ -238,4 +238,77 @@ select::-ms-expand {
 }
 .product-price{
     font-size:14px;
+}
+
+
+/* ----------- Non-Retina Screens ----------- */
+/* ----------- iPad mini Screen --------*/
+@media screen and (min-width: 1152px)  { 
+    .header > .logo{
+        width:45px;
+        height: 45px;
+        line-height: 45px;
+    }
+    .header > .basket{
+        width:45px;
+        height: 45px;
+        line-height: 45px;
+    }
+
+    .header__menuBox{
+        width: 50%;
+        float:left;
+    }
+    .header__menuItem{
+        display:inline-block;
+        line-height: 45px;
+        text-align: center;
+        margin-left: 45px;
+    }
+
+    .header__menuItem a{
+        text-decoration: none;
+        color: #000000;
+    }
+    .header__profile{
+        float:right;
+        width:45px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        background: url(../img/profile.png) no-repeat center center scroll;
+    }
+    .header > .menu-toggle{
+        display: none;
+    }
+    .header__searchIcon{
+        float:right;
+        width:45px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        border: 1px solid #959595;
+        background: url(../img/search.png) no-repeat center center scroll;
+    }
+
+}
+
+/* ----------- iPhone 6 ----------- */
+@media only screen 
+    and (min-width: 375px) 
+    and (max-width: 1151px)  { 
+
+        .header__menuBox{
+            display: none;
+        }
+
+}
+
+/* ----------- TOO SMALL ----------- */
+@media only screen 
+    and (max-device-width: 374px) { 
+        body{
+            display: none;
+        }
+
 }

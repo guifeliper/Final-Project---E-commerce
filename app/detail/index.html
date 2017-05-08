@@ -1,59 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <title>SH</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-sacle=1">
-    <link href="../css/reset-css.css" rel="stylesheet">
-    <link href="../css/style.css" rel="stylesheet">
-    <link href="../css/category.css" rel="stylesheet">
-</head>
+    <head>
+        <title>SH</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/reset-css.css" rel="stylesheet">
+        <link href="../css/style.css" rel="stylesheet">
+        <link href="../css/detail.css" rel="stylesheet">
+    </head>
 
-<body>
-    <header>
-        <div class="header">
-            <div class="logo"><a href="../home/index.html">SH</a></div>
-
-            <nav class="menu-toggle"> <a href="#">☰</a></nav>
-            <div class="basket">
-                <a href="#"></a>
+    <body>
+        <header>
+            <div class="header">
+                <div class="logo"><a href="../home/index.html">SH</a></div>
+                <ul class="header__menuBox">
+                    <li class="header__menuItem"><a href="#">Woman</a></li>
+                    <li class="header__menuItem"><a href="#">Men</a></li>
+                    <li class="header__menuItem"><a href="#">Kids</a></li>
+                    <li class="header__menuItem"><a href="#">Coming soon</a></li>
+                    <li class="header__menuItem"><a href="#">About</a></li>
+                </ul>
+                
+                <nav class="menu-toggle"> <a href="#">☰</a></nav>
+                <div class="header__searchIcon"></div>
+                <div class="basket"> </div>Basket(0)
+                <a href="#"><div class="header__profile"></div>Log in</a>
             </div>
-        </div>
-    </header>
-    <main>
-        <div class="wrapper">
-            <ul class="menu-line">
-                <li class="menu-item"><a href="../home/index.html">Home</a></li>
-                <li class="menu-item"><a href="../Men/index.html">Men</a></li>
-                 <li class="menu-item"><a href="../Men/index.html">Shoes</a></li>
-                  <li class="menu-item"><a href="../detail/index.html">Floral Pimbsoll</a></li>
-            </ul>
+        </header>
+        <main>
+            <div class="wrapper">
+                <ul class="menu-line">
+                    <li class="menu-item"><a href="../home/index.html">Home</a></li>
+                    <li class="menu-item"><a href="../Men/index.html">Men</a></li>
+                    <li class="menu-item"><a href="../Men/index.html">Shoes</a></li>
+                    <li class="menu-item"><a href="../detail/index.html">Floral Pimbsoll</a></li>
+                </ul>
 
+                <!-- irei tentar utilizar a metodologia BEM a partir daqui 
+Note que a estrutura comum do site não esta com essa metodologia---->
 
-
-        </div>
-
-
-    </main>
-    <footer>
-        <div class="footer-box">
-            <h1>SOCIAL</h1>
-            <p>Shoper is made with love in Warsaw, 2014 © All rights reserved. El Passion</p>
-            <div class="footer-social-box">
-                <div>
-                    <a class="footer-social img-twitter" href="http://www.twitter.com" target="_blank"></a>
+                <div class="detail__img"></div>
+                <div class="detail__info">
+                    <div class="detail__textInformation">
+                        <h1 class="detail__title">FLORAL PLIMSOLL</h1>
+                        <p class="detail__ref">Article number: 14210160762</p>
+                        <p class="detail__descriptive--price">€ 99,95</p>
+                        <p class="detail__descriptive">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. 
+                        </p>
+                        <p class="detail__descriptive--size">SIZE</p>
+                        <div class="detail__sizeContent">
+                            <div class="detail__sizeBox">38</div>
+                            <div class="detail__sizeBox">39</div>
+                            <div class="detail__sizeBox">40</div>
+                            <div class="detail__sizeBox">41</div>
+                            <div class="detail__sizeBox">42</div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <a class="footer-social img-facebook" href="http://www.facebook.com" target="_blank"></a>
-                </div>
-                <div>
-                    <a class="footer-social img-instagram" href="http://www.instagram.com" target="_blank"></a>
+                <button class="btn-default detail__btn">ADD TO CART</button>
+
+            </div>
+
+
+        </main>
+        <footer>
+            <div class="footer-box">
+                <h1>SOCIAL</h1>
+                <p>Shoper is made with love in Warsaw, 2014 © All rights reserved. El Passion</p>
+                <div class="footer-social-box">
+                    <div>
+                        <a class="footer-social img-twitter" href="http://www.twitter.com" target="_blank"></a>
+                    </div>
+                    <div>
+                        <a class="footer-social img-facebook" href="http://www.facebook.com" target="_blank"></a>
+                    </div>
+                    <div>
+                        <a class="footer-social img-instagram" href="http://www.instagram.com" target="_blank"></a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-    </footer>
-</body>
+        </footer>
+    </body>
 
 </html>
